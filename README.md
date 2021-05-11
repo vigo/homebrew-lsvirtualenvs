@@ -1,11 +1,12 @@
-# Vigo Lsvirtualenvs
+# Brew Tap for `lsvirtualenvs`
 
-## How do I install these formulae?
+Install latest version of [lsvirtualenvs](https://github.com/vigo/lsvirtualenvs)
 
-`brew install vigo/lsvirtualenvs/<formula>`
+```bash
+$ brew install vigo/lsvirtualenvs/lsvirtualenvs
 
-Or `brew tap vigo/lsvirtualenvs` and then `brew install <formula>`.
+# or
 
-## Documentation
-
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+$ brew tap vigo/lsvirtualenvs
+$ brew install lsvirtualenvs
+```
