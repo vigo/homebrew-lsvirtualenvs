@@ -12,6 +12,10 @@ class Lsvirtualenvs < Formula
   end
 
   test do
-    assert_match "0.1.0", shell_output("#{bin}/lsvirtualenvs -version 2>&1", 2)
+    require "open3"
+    Open3.popen3("#{bin}/lsvirtualenvs", "-version") do |stdin, stdout, _|
+      stdin.close
+      assert_equal "0.1.0", stdout.read.strip
+    end
   end
 end
