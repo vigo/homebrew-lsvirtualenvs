@@ -6,9 +6,9 @@ class Lsvirtualenvs < Formula
   license "MIT"
 
   bottle do
-    root_url "https://github.com/vigo/homebrew-lsvirtualenvs/releases/download/lsvirtualenvs-0.2.0"
-    sha256 cellar: :any_skip_relocation, big_sur:      "786f590351eec9e6322bfcf6b757628c25d7fb88f7d28a6b22418b0c719e02e8"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "3b13bacf6f645b19fac3ec483057b67b8678e40a21bcdecf943b09830ccbc39d"
+    root_url "https://github.com/vigo/homebrew-lsvirtualenvs/releases/download/lsvirtualenvs-0.3.2"
+    sha256 cellar: :any_skip_relocation, big_sur:      "a5a37aa68169d6c8342e94d353273d00d2c787aca2e65d7a9104d15df4a94006"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "f2ada99fe1d6e487d40fa25211c377537c107e7ee93ec2f43bdb54cfa994f472"
   end
 
   depends_on "go" => :build
