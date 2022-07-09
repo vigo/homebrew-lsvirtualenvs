@@ -1,8 +1,8 @@
 class Lsvirtualenvs < Formula
   desc "Small command-line tool for `virtualenvwrapper`"
   homepage "https://github.com/vigo/lsvirtualenvs"
-  url "https://github.com/vigo/lsvirtualenvs/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "678654034a9369880c37b5be7ac7fc746413d5cbb5231f6e7ac7d85beb19cd7d"
+  url "https://github.com/vigo/lsvirtualenvs/archive/refs/tags/v0.3.1.tar.gz"
+  sha256 "4fe25a2c8f7bd7c387a3c964d2c9072929bd12b62c0cbb0e97d1407a31337f23"
   license "MIT"
 
   bottle do
@@ -21,7 +21,7 @@ class Lsvirtualenvs < Formula
     require "open3"
     Open3.popen3("#{bin}/lsvirtualenvs", "-version") do |stdin, stdout, _|
       stdin.close
-      assert_equal "0.2.0", stdout.read.strip
+      assert_equal "0.3.1", stdout.read.strip
     end
   end
 end
